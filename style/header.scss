@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 123px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  &-topics {
+    display: flex;
+    align-items: center;
+    color: #292d32;
+
+    &__icon {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__item {
+      margin-right: 45px;
+      text-decoration: none;
+      color: inherit;
+
+      &:first-child {
+        margin-right: 60px;
+      }
+      &:nth-child(6) {
+        margin-right: 50px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(n+2):hover {
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      margin-right: 30px;
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &:hover{
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+    }
+
+    &__counter{
+      position: relative;
+      top: -5px;
+      right: 16px;
+    }
+  }
+}

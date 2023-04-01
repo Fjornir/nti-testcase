@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./public/stylesheets/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header page">
+        <nav class="navbar">
+          <div class="navbar-topics">
+            <img
+              src="./public/imgs/header/icon.svg"
+              class="navbar-topics__icon navbar-topics__item"
+            />
+            <a href="#" class="navbar-topics__item">Главная</a>
+            <a href="#" class="navbar-topics__item">Каталог</a>
+            <a href="#" class="navbar-topics__item">Новости</a>
+            <a href="#" class="navbar-topics__item">Наш Асц</a>
+            <a href="#" class="navbar-topics__item">Контакты</a>
+            <a href="#" class="navbar-topics__item"
+              ><img src="./public/imgs/header/clarity_shopping-bag-line.svg"
+            /></a>
+          </div>
+          <div class="navbar-menu">
+            <a class="navbar-menu__item"
+              ><img src="./public/imgs/header/profile.svg"
+            /></a>
+            <a class="navbar-menu__item"
+              ><img src="./public/imgs/header/recomendation.svg"
+            /></a>
+            <a class="navbar-menu__item"
+              ><img src="./public/imgs/header/liked.png"
+            /></a>
+            <a class="navbar-menu__item"
+              ><img src="./public/imgs/header/basket.svg" /><img
+                class="navbar-menu__counter"
+                src="./public/imgs/header/counter.svg"
+            /></a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main class="main">
+      <div class="gallery">
+        <img class="gallery__dell" src="./public/imgs/main/Dell.svg" />
+        <div class="gallery-scroll">
+          <p class="gallery-scroll__text">Scroll to catalog</p>
+          <img class="gallery-scroll__img" src="./public/imgs/main/Union.svg" />
+        </div>
+        <div class="slider">
+          <div class="slider-item">
+            <section class="slider-item-info">
+              <div class="slider-item-info__tagline">Новое поступление</div>
+              <div class="slider-item-info__title">
+                Лучшие товары<br />
+                от компании Dell
+              </div>
+              <div class="slider-item-info-detail">
+                <button class="slider-item-info-detail__button"><img src="" /></button
+                ><a class="slider-item-info-detail__link">Подробнее</a>
+              </div>
+            </section>
+            <img
+              class="slider-item__img"
+              src="./public/imgs/main/Notebooks.svg"
+            />
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

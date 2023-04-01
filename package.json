@@ -1,0 +1,11 @@
+{
+  "name": "nti-testcase",
+  "version": "1.0.0",
+  "description": "Frontend test case for nti-team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
