@@ -1,4 +1,5 @@
 .main {
+  display: flex;
   height: 683px;
   background-color: #f2f2f2;
   font-family: Roboto;
@@ -57,6 +58,26 @@
 
           &-detail {
             display: flex;
+            margin-top: 60px;
+            align-items: center;
+
+            &__button {
+              height: 55px;
+              width: 55px;
+              background-color: #33a9ff;
+              border-radius: 50%;
+              margin-right: 12px;
+            }
+
+            &__pointer {
+              margin-top: 4px;
+            }
+
+            &__link {
+              line-height: 30px;
+              font-weight: 400px;
+              color: #292d32;
+            }
           }
 
           &__tagline {
@@ -73,6 +94,57 @@
             color: #292d32;
           }
         }
+
+        &__img {
+          position: relative;
+          right: 50px;
+        }
+      }
+
+      &-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 912px;
+        bottom: 128px;
+        width: 69px;
+        z-index: 3;
+
+        &__point {
+          width: 5px;
+          height: 5px;
+          background-color: #d0d0d0;
+          border-radius: 50%;
+
+          &:first-child {
+            width: 9px;
+            height: 9px;
+            background-color: #292d32;
+          }
+        }
+      }
+    }
+
+    &-preview {
+      background-color: #F9F9F9;
+      height: 683px;
+      width: 509px;
+
+      &__title {
+        position: relative;
+        left: 40px;
+        bottom: 160px;
+        width: 181px;
+        color: #292D32;
+        font-weight: 400;
+        font-size: 25px;
+      }
+
+      &__pointer{
+        position: relative;
+        bottom: 76px;
+        left: 40px
       }
     }
   }
