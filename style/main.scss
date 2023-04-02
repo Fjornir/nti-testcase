@@ -75,6 +75,8 @@
 
             &__link {
               line-height: 30px;
+
+              font-size: 16px;
               font-weight: 400px;
               color: #292d32;
             }
@@ -106,7 +108,7 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
-        left: 912px;
+        left: 900px;
         bottom: 128px;
         width: 69px;
         z-index: 3;
@@ -127,7 +129,7 @@
     }
 
     &-preview {
-      background-color: #F9F9F9;
+      background-color: #f9f9f9;
       height: 683px;
       width: 509px;
 
@@ -136,15 +138,15 @@
         left: 40px;
         bottom: 160px;
         width: 181px;
-        color: #292D32;
+        color: #292d32;
         font-weight: 400;
         font-size: 25px;
       }
 
-      &__pointer{
+      &__pointer {
         position: relative;
         bottom: 76px;
-        left: 40px
+        left: 40px;
       }
     }
   }
