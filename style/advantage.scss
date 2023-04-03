@@ -1,0 +1,140 @@
+.advantage {
+  
+  position: relative;
+  background-color: #f2f2f2;
+  margin-top: 140px;
+  height: 975px;
+
+  font-family: Roboto;
+
+  &__img {
+    position: absolute;
+    top: 2084px;
+    left: 10px;
+    z-index: 1;
+  }
+
+  &-wrapper {
+    display: grid;
+    grid-template-rows: 579px 290px;
+    grid-template-columns: repeat(4, 330px);
+    gap: 48px 27px;
+    margin: 0 auto;
+
+    .advantage__notebook {
+      position: absolute;
+      margin-top: 87px;
+    }
+  }
+
+  &-info {
+    grid-column: 3 / 5;
+    margin-top: 183px;
+
+    &__title {
+      width: 492px;
+      font-size: 50px;
+      font-weight: 400;
+      color: #292d32;
+    }
+
+    &__text {
+      width: 518px;
+      margin-top: 37px;
+      font-size: 18px;
+      color: #838383;
+    }
+
+    &-detail {
+      display: flex;
+      margin-top: 41px;
+      align-items: center;
+
+      &__button {
+        height: 55px;
+        width: 55px;
+        background-color: #33a9ff;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+
+      &__pointer {
+        margin-top: 4px;
+      }
+
+      &__link {
+        line-height: 30px;
+
+        font-size: 16px;
+        font-weight: 400px;
+        color: #292d32;
+      }
+    }
+
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 897px;
+      height: 346px;
+      background-image: url(../imgs/advantage/best\ quality.svg) ;
+      background-repeat: no-repeat;
+      top: 152px;
+      left: 5px;
+    }
+
+    &::after{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 874px;
+      height: 492px;
+      background-image: url(../imgs/advantage/notebook.svg);
+      top: 87px;
+      left: 189px;
+    }
+  }
+
+  .pros {
+    display: flex;
+    margin: 0 auto;
+
+    &-card {
+      width: 330px;
+      height: 289px;
+      padding: 30px;
+      background-color: #292d32;
+      background-image: url(../imgs/advantage/vector.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 0;
+      border-radius: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-logo {
+        width: 70px;
+        height: 70px;
+        padding: 17px;
+        background-color: #343A41;
+        border-radius: 10px;
+      }
+
+
+      &__title {
+        margin-top: 25px;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 22px;
+      }
+
+      &__text {
+        margin-top: 13px;
+        color: #b7b7b7;
+        font-weight: 300;
+        font-size: 16px;
+      }
+    }
+  }
+}

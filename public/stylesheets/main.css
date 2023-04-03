@@ -17,17 +17,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: absolute;
   width: 25px;
   height: 168px;
   padding-top: 357px;
-  z-index: 2;
+  z-index: 3;
 }
 .main .gallery-scroll__text {
   font-weight: 300;
   writing-mode: sideways-lr;
   padding-left: 3px;
   color: #838383;
-  z-index: 2;
 }
 .main .gallery-scroll__text:before {
   box-sizing: unset;
@@ -38,12 +38,11 @@
 .main .gallery-scroll__img {
   width: 25px;
   height: 39px;
-  z-index: 2;
 }
 .main .gallery .slider {
   padding-top: 74px;
   padding-left: 105px;
-  z-index: 2;
+  z-index: 3;
 }
 .main .gallery .slider-item {
   display: flex;
