@@ -1,0 +1,134 @@
+.news {
+  width: 1400px;
+  margin: 172px auto 180px auto;
+  font-family: Roboto;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 58.59px;
+      color: #292D32;
+    }
+
+    &-detail {
+      display: flex;
+      align-items: center;
+
+      &__button {
+        height: 55px;
+        width: 55px;
+        background-color: #33a9ff;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+
+      &__pointer {
+        margin-top: 4px;
+      }
+
+      &__link {
+        line-height: 30px;
+        margin-right: 17px;
+        font-size: 16px;
+        font-weight: 400px;
+        color: #292d32;
+      }
+    }
+  }
+
+  &__text {
+    width: 721px;
+    margin: 25px 0 70px 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #838383;
+  }
+
+  .feed {
+    display: grid;
+    grid-template-columns: 415px 415px 415px;
+    grid-column-gap: 77px;
+    grid-row-gap: 66px;
+
+    &-item {
+      position: relative;
+      border-top-left-radius: 45px;
+      border-bottom-right-radius: 45px;
+      width: 415px;
+      height: 364px;
+      background-image: url(../imgs/news/One.png);
+      background-repeat: no-repeat;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+
+      &-footer {
+        height: 146px;
+        width: 415px;
+        position: absolute;
+        bottom: 0px;
+        background-image: url(../imgs/news/GeometricBlock.svg);
+        //border-bottom-right-radius: 45px;
+
+        &-button_wrapper {
+          width: 67px;
+          height: 67px;
+          position: absolute;
+          border-radius: 50%;
+          background-color: #ffffff;
+          left: 323px;
+          bottom: 65px;
+
+          &__button_item {
+            position: relative;
+            left: 12px;
+            top: 12px;
+            width: 43px;
+            height: 43px;
+            background-color: #292d32;
+            border-radius: 50%;
+
+            img {
+              padding-top: 4px;
+            }
+          }
+        }
+
+        &__title {
+          margin: 24px 0 0 30px;
+          width: 268px;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 32.5px;
+          color: #292d32;
+        }
+
+        &__text {
+          margin: 11px 0 0 30px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+
+      &:nth-child(2) {
+        background-image: url(../imgs/news/Two.png);
+      }
+      &:nth-child(3) {
+        background-image: url(../imgs/news/Three.png);
+      }
+      &:nth-child(4) {
+        background-image: url(../imgs/news/Four.png);
+      }
+      &:nth-child(5) {
+        background-image: url(../imgs/news/Five.png);
+      }
+      &:nth-child(6) {
+        background-image: url(../imgs/news/Six.png);
+      }
+    }
+  }
+}
