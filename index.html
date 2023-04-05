@@ -373,5 +373,73 @@
         </div>
       </div>
     </div>
+
+    <div class="our_contacts"></div>
+    <div class="feedback">
+      <div class="contacts">
+        <article class="contacts__title">Наши контакты</article>
+        <p class="contacts__about">
+          Вы можете связаться с нашим онлайн-консультантом
+        </p>
+        <div class="contacts-info">
+          <img
+            class="contacts-info__icon"
+            src="./public/imgs/feedback/location.svg"
+          />
+          <article class="contacts-info__title">Адрес</article>
+          <a class="contacts-info__address"
+            >Москва, ул. 3-я Хорошевская, дом<br />
+            2, строение 1</a
+          >
+        </div>
+        <div class="contacts-info">
+          <img
+            class="contacts-info__icon"
+            src="./public/imgs/feedback/sms.svg"
+          />
+          <article class="contacts-info__title">E-mail</article>
+          <a class="contacts-info__address">dell_ru@gmail.com</a>
+        </div>
+        <div class="contacts-info">
+          <img
+            class="contacts-info__icon"
+            src="./public/imgs/feedback/call.svg"
+          />
+          <article class="contacts-info__title">Телефон</article>
+          <a class="contacts-info__address"
+            >+7 495 737-06-01<br />+7 495 737-06-01</a
+          >
+        </div>
+        <img class="contacts__icon" src="./public/imgs/feedback/facebook.svg" />
+        <img class="contacts__icon" src="./public/imgs/feedback/whatsup.svg" />
+      </div>
+      <img class="feedback__img" src="./public/imgs/feedback/iPhone.png" />
+      <form class="form">
+        <article class="form__title">Оставьте заявку</article>
+        <p class="form__about">Оставьте свой номер, и мы перезвоним Вам.</p>
+        <div class="form-group">
+          <label class="form-group__label">Ваше имя</label>
+          <input type="text" class="form-group__control" required />
+        </div>
+        <div class="form-group">
+          <label class="form-group__label">Номер телефона</label>
+          <input type="text" class="form-group__control" required />
+        </div>
+        <div class="form-group">
+          <label class="form-group__label">Комментарий</label>
+          <textarea
+            class="form-group__control"
+            rows="5"
+            cols="45"
+            name="text"
+            required
+          ></textarea>
+        </div>
+        <div class="form-detail">
+          <input type="submit" class="form-detail__button" value="" />
+          <button onclick="triggerSubmitButtonClick()" class="form-detail__link">Заказать</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
