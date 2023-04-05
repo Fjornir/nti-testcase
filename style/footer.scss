@@ -1,0 +1,86 @@
+.footer {
+  background-image: url(../imgs/footer/DELL.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 83px;
+
+  &-wrapper {
+    margin: 294px auto 0 auto;
+    width: 1400px;
+    font-family: Roboto;
+
+    .categories {
+      display: flex;
+      border-bottom: 1px solid #e5e5e5;
+
+      &__logo {
+        margin: 29px 180px 98px 0;
+      }
+
+      &-items {
+        margin-right: 180px;
+
+        &__link {
+          display: flex;
+          flex-direction: column;
+          color: #292d32;
+          font-size: 16px;
+          font-weight: 300;
+          margin-bottom: 10px;
+
+          &:nth-of-type(1) {
+            color: #292d32;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 29.3px;
+            margin-bottom: 15px;
+          }
+        }
+
+        &:nth-of-type(1) {
+          width: 214px;
+        }
+
+        &:nth-of-type(2) {
+          width: 195px;
+        }
+
+        &:nth-of-type(3) {
+          width: 139px;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      margin: 40px 0;
+
+      &-element {
+        display: flex;
+        flex-direction: column;
+        height: 59px;
+        margin-right: 153px;
+
+        &__address {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21.39px;
+          color: #838383;
+        }
+
+        &__link {
+          margin-top: 11px;
+          color: #292d32;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+
+      &__icon {
+        &:nth-of-type(1) {
+          margin-right: 19px;
+        }
+      }
+    }
+  }
+}
