@@ -190,14 +190,14 @@ legend {
   color: #838383;
 }
 .main-wrapper__left_side .swiper {
-  margin: 74px 0 54px 130px;
+  margin: 74px 0 0 130px;
 }
 .main-wrapper__left_side .swiper-slide {
   position: relative;
   height: 683px;
 }
 .main-wrapper__left_side .swiper-slide__article {
-  margin-top: 253px;
+  margin-top: 179px;
   font-weight: 300;
   font-size: 18px;
   color: #838383;
@@ -211,7 +211,7 @@ legend {
 }
 .main-wrapper__left_side .swiper-slide__image {
   position: absolute;
-  top: 74px;
+  top: 0px;
   left: 404px;
   display: inline-block;
   z-index: 2;
