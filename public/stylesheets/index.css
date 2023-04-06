@@ -158,133 +158,111 @@ legend {
 }
 
 .main {
-  display: flex;
+  position: relative;
   height: 683px;
+  background-image: url(../imgs/main/Dell.svg);
+  background-repeat: no-repeat;
+  background-position: 260px 97.4px;
   background-color: #f2f2f2;
   font-family: Roboto;
 }
-.main .gallery {
+.main-wrapper {
   display: flex;
-  margin-left: 260px;
+  width: 1400px;
+  margin: 0 auto;
 }
-.main .gallery__dell {
-  position: absolute;
-  top: 220px;
-  z-index: 1;
+.main-wrapper__left_side {
+  width: 1151px;
 }
-.main .gallery-scroll {
+.main-wrapper__left_side .scroll {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: absolute;
+  top: 357px;
   width: 25px;
   height: 168px;
-  padding-top: 357px;
-  z-index: 3;
 }
-.main .gallery-scroll__text {
+.main-wrapper__left_side .scroll__text {
   font-weight: 300;
   writing-mode: sideways-lr;
   padding-left: 3px;
   color: #838383;
 }
-.main .gallery-scroll__text:before {
-  box-sizing: unset;
+.main-wrapper__left_side .swiper {
+  margin: 74px 0 54px 130px;
 }
-.main .gallery-scroll__text:after {
-  box-sizing: unset;
+.main-wrapper__left_side .swiper-slide {
+  position: relative;
+  height: 683px;
 }
-.main .gallery-scroll__img {
-  width: 25px;
-  height: 39px;
-}
-.main .gallery .slider {
-  padding-top: 74px;
-  padding-left: 105px;
-  z-index: 3;
-}
-.main .gallery .slider-item {
-  display: flex;
-}
-.main .gallery .slider-item-info {
-  width: 446px;
-}
-.main .gallery .slider-item-info-detail {
-  display: flex;
-  margin-top: 60px;
-  align-items: center;
-}
-.main .gallery .slider-item-info-detail__button {
-  height: 55px;
-  width: 55px;
-  background-color: #33a9ff;
-  border-radius: 50%;
-  margin-right: 12px;
-}
-.main .gallery .slider-item-info-detail__pointer {
-  margin-top: 4px;
-}
-.main .gallery .slider-item-info-detail__link {
-  line-height: 30px;
-  font-size: 16px;
-  font-weight: 400px;
-  color: #292d32;
-}
-.main .gallery .slider-item-info__tagline {
-  margin-top: 179px;
+.main-wrapper__left_side .swiper-slide__article {
+  margin-top: 253px;
   font-weight: 300;
   font-size: 18px;
   color: #838383;
 }
-.main .gallery .slider-item-info__title {
+.main-wrapper__left_side .swiper-slide__title {
   margin-top: 15px;
+  width: 400px;
   font-weight: 400px;
   font-size: 50px;
   color: #292d32;
 }
-.main .gallery .slider-item__img {
-  position: relative;
-  right: 50px;
+.main-wrapper__left_side .swiper-slide__image {
+  position: absolute;
+  top: 74px;
+  left: 404px;
+  display: inline-block;
+  z-index: 2;
 }
-.main .gallery .slider-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  left: 900px;
-  bottom: 128px;
-  width: 69px;
-  z-index: 3;
-}
-.main .gallery .slider-buttons__point {
-  width: 5px;
-  height: 5px;
-  background-color: #d0d0d0;
-  border-radius: 50%;
-}
-.main .gallery .slider-buttons__point:first-child {
-  width: 9px;
-  height: 9px;
-  background-color: #292d32;
-}
-.main .gallery-preview {
-  background-color: #f9f9f9;
-  height: 683px;
+.main-wrapper__right_side {
+  position: absolute;
+  height: 100%;
   width: 509px;
+  right: 0;
+  background-color: #F9F9F9;
+  background-image: url(../imgs/main/Preview.svg);
+  background-repeat: no-repeat;
 }
-.main .gallery-preview__title {
-  position: relative;
-  left: 40px;
-  bottom: 160px;
+.main-wrapper__right_side .article {
+  margin-top: 321px;
+  margin-left: 40px;
   width: 181px;
-  color: #292d32;
+  color: #292D32;
   font-weight: 400;
   font-size: 25px;
+  line-height: 32.5px;
 }
-.main .gallery-preview__pointer {
-  position: relative;
-  bottom: 76px;
-  left: 40px;
+.main .swiper-pagination {
+  position: absolute;
+  width: 69px;
+  bottom: 185px;
+  left: 1302px;
+}
+.main .swiper-pagination-bullet {
+  height: 5px;
+  width: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main .swiper-pagination-bullet-active {
+  background-color: #292d32;
+  height: 9px;
+  width: 9px;
+}
+.main .swiper-button-next {
+  position: absolute;
+  right: 364px;
+  top: 500px;
+  color: #292d32;
+  width: 105px;
+  height: 21px;
+  background-image: url(../imgs/main/Arrow.svg);
+  background-repeat: no-repeat;
+}
+.main .swiper-button-next::after {
+  display: none;
 }
 
 .catalogue {
@@ -483,7 +461,7 @@ legend {
   position: absolute;
   width: 874px;
   height: 492px;
-  background-image: url(../imgs/advantage/notebook.svg);
+  background-image: url(../imgs/advantage/notebook.png);
   top: 87px;
   left: 189px;
 }
@@ -752,13 +730,13 @@ legend {
 }
 .feedback .form-group__label {
   position: absolute;
-  top: -15px;
+  top: -14px;
   left: 20px;
-  color: rgba(242, 242, 242, 0.5);
+  color: rgb(242, 242, 242);
   font-weight: 300;
   font-size: 18px;
   line-height: 24.06px;
-  padding: 0 5px;
+  padding: 0 8px;
   z-index: 2;
   background-color: #292d32;
 }

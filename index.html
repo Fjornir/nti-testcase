@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
@@ -54,52 +58,118 @@
       </header>
     </div>
     <main class="main">
-      <div class="gallery">
-        <img class="gallery__dell" src="./public/imgs/main/Dell.svg" />
-        <div class="gallery-scroll">
-          <p class="gallery-scroll__text">Scroll to catalog</p>
-          <img class="gallery-scroll__img" src="./public/imgs/main/Union.svg" />
-        </div>
-        <div class="slider">
-          <div class="slider-item">
-            <section class="slider-item-info">
-              <div class="slider-item-info__tagline">Новое поступление</div>
-              <article class="slider-item-info__title">
-                Лучшие товары<br />
-                от компании Dell
-              </article>
-              <div class="slider-item-info-detail">
-                <button class="slider-item-info-detail__button">
-                  <img
-                    class="slider-item-info-detail__pointer"
-                    src="./public/imgs/main/Pointer.svg"
-                  /></button
-                ><a href="#" class="slider-item-info-detail__link">Подробнее</a>
+      <div class="main-wrapper">
+        <div class="main-wrapper__left_side">
+          <div class="scroll">
+            <p class="scroll__text">Scroll to catalog</p>
+            <img class="scroll__img" src="./public/imgs/main/Union.svg" />
+          </div>
+
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper-slide__article">Новое поступление</div>
+                <div class="swiper-slide__title">
+                  Лучшие товары от компании Dell
+                </div>
+                <div class="catalogue-info-detail">
+                  <button class="catalogue-info-detail__button">
+                    <img
+                      class="catalogue-info-detail__pointer"
+                      src="./public/imgs/main/Pointer.svg"
+                    /></button
+                  ><a href="#" class="catalogue-info-detail__link">В каталог</a>
+                </div>
+                <img
+                  class="swiper-slide__image"
+                  src="./public/imgs/main/Notebooks.svg"
+                />
               </div>
-            </section>
-            <img
-              class="slider-item__img"
-              src="./public/imgs/main/Notebooks.svg"
-            />
-          </div>
-          <div class="slider-buttons">
-            <div class="slider-buttons__point"></div>
-            <div class="slider-buttons__point"></div>
-            <div class="slider-buttons__point"></div>
-            <div class="slider-buttons__point"></div>
-            <div class="slider-buttons__point"></div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__article">Новое поступление</div>
+                <div class="swiper-slide__title">
+                  Лучшие товары от компании Dell
+                </div>
+                <div class="catalogue-info-detail">
+                  <button class="catalogue-info-detail__button">
+                    <img
+                      class="catalogue-info-detail__pointer"
+                      src="./public/imgs/main/Pointer.svg"
+                    /></button
+                  ><a href="#" class="catalogue-info-detail__link">В каталог</a>
+                </div>
+                <img
+                  class="swiper-slide__image"
+                  src="./public/imgs/main/Notebooks.svg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__article">Новое поступление</div>
+                <div class="swiper-slide__title">
+                  Лучшие товары от компании Dell
+                </div>
+                <div class="catalogue-info-detail">
+                  <button class="catalogue-info-detail__button">
+                    <img
+                      class="catalogue-info-detail__pointer"
+                      src="./public/imgs/main/Pointer.svg"
+                    /></button
+                  ><a href="#" class="catalogue-info-detail__link">В каталог</a>
+                </div>
+                <img
+                  class="swiper-slide__image"
+                  src="./public/imgs/main/Notebooks.svg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__article">Новое поступление</div>
+                <div class="swiper-slide__title">
+                  Лучшие товары от компании Dell
+                </div>
+                <div class="catalogue-info-detail">
+                  <button class="catalogue-info-detail__button">
+                    <img
+                      class="catalogue-info-detail__pointer"
+                      src="./public/imgs/main/Pointer.svg"
+                    /></button
+                  ><a href="#" class="catalogue-info-detail__link">В каталог</a>
+                </div>
+                <img
+                  class="swiper-slide__image"
+                  src="./public/imgs/main/Notebooks.svg"
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__article">Новое поступление</div>
+                <div class="swiper-slide__title">
+                  Лучшие товары от компании Dell
+                </div>
+                <div class="catalogue-info-detail">
+                  <button class="catalogue-info-detail__button">
+                    <img
+                      class="catalogue-info-detail__pointer"
+                      src="./public/imgs/main/Pointer.svg"
+                    /></button
+                  ><a href="#" class="catalogue-info-detail__link">В каталог</a>
+                </div>
+                <img
+                  class="swiper-slide__image"
+                  src="./public/imgs/main/Notebooks.svg"
+                />
+              </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+
+            <!-- If we need scrollbar -->
           </div>
         </div>
-        <div class="gallery-preview">
-          <img
-            class="gallery-preview__img"
-            src="./public/imgs/main/Preview.svg"
-          />
-          <p class="gallery-preview__title">Выгодное предложение от Dell</p>
-          <img
-            class="gallery-preview__pointer"
-            src="./public/imgs/main/Arrow.svg"
-          />
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="main-wrapper__right_side">
+          <article class="article">Выгодное предложение от Dell</article>
         </div>
       </div>
     </main>
@@ -126,7 +196,7 @@
           <div class="catalogue-item__number">01</div>
           <img
             class="catalogue-item__img"
-            src="./public/imgs/catalogue/notebook.svg"
+            src="./public/imgs/catalogue/notebook.png"
           />
           <div class="catalogue-item__amount">105 товаров</div>
           <article class="catalogue-item__title">Ноутбуки</article>
@@ -135,7 +205,7 @@
           <div class="catalogue-item__number">02</div>
           <img
             class="catalogue-item__img"
-            src="./public/imgs/catalogue/pc.svg"
+            src="./public/imgs/catalogue/pc.png"
           />
           <div class="catalogue-item__amount">65 товаров</div>
           <article class="catalogue-item__title">
@@ -146,7 +216,7 @@
           <div class="catalogue-item__number">03</div>
           <img
             class="catalogue-item__img"
-            src="./public/imgs/catalogue/server.svg"
+            src="./public/imgs/catalogue/server.png"
           />
           <div class="catalogue-item__amount">13 товаров</div>
           <article class="catalogue-item__title">Серверы</article>
@@ -155,7 +225,7 @@
           <div class="catalogue-item__number">04</div>
           <img
             class="catalogue-item__img"
-            src="./public/imgs/catalogue/emc.svg"
+            src="./public/imgs/catalogue/emc.png"
           />
           <div class="catalogue-item__amount">2345 товаров</div>
           <article class="catalogue-item__title">Dell EMC</article>
@@ -164,7 +234,7 @@
           <div class="catalogue-item__number">05</div>
           <img
             class="catalogue-item__img"
-            src="./public/imgs/catalogue/partial.svg"
+            src="./public/imgs/catalogue/partial.png"
           />
           <div class="catalogue-item__amount">195 товаров</div>
           <article class="catalogue-item__title">
@@ -472,12 +542,15 @@
             src="./public/imgs/footer/DellLogo.svg"
           />
           <div class="categories-items">
-            <a href="#"  class="categories-items__link">Каталог</a>
+            <a href="#" class="categories-items__link">Каталог</a>
             <a href="#" class="categories-items__link">Ноутбуки</a>
-            <a href="#" class="categories-items__link">Персональные компьютеры</a
+            <a href="#" class="categories-items__link"
+              >Персональные компьютеры</a
             ><a href="#" class="categories-items__link">Серверы</a
             ><a href="#" class="categories-items__link">Dell EMC</a
-            ><a href="#" class="categories-items__link">Запасные части к Dell EMC</a>
+            ><a href="#" class="categories-items__link"
+              >Запасные части к Dell EMC</a
+            >
           </div>
           <div class="categories-items">
             <a href="#" class="categories-items__link">Личный кабинет</a>
@@ -515,5 +588,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>

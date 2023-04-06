@@ -85,13 +85,13 @@
 }
 .feedback .form-group__label {
   position: absolute;
-  top: -15px;
+  top: -14px;
   left: 20px;
-  color: rgba(242, 242, 242, 0.5);
+  color: rgb(242, 242, 242);
   font-weight: 300;
   font-size: 18px;
   line-height: 24.06px;
-  padding: 0 5px;
+  padding: 0 8px;
   z-index: 2;
   background-color: #292d32;
 }

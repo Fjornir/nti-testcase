@@ -1,0 +1,124 @@
+.main {
+  position: relative;
+  height: 683px;
+  background-image: url(../imgs/main/Dell.svg);
+  background-repeat: no-repeat;
+  background-position: 260px 97.4px;
+  background-color: #f2f2f2;
+  font-family: Roboto;
+
+  &-wrapper {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+
+    &__left_side {
+      width: 1151px;
+
+      .scroll {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 357px;
+        width: 25px;
+        height: 168px;
+
+        &__text {
+          font-weight: 300;
+          writing-mode: sideways-lr;
+          padding-left: 3px;
+          color: #838383;
+        }
+      }
+      .swiper {
+        margin: 74px 0 54px 130px;
+
+        &-slide {
+          position: relative;
+          height: 683px;
+
+          &__article {
+            margin-top: 253px;
+            font-weight: 300;
+            font-size: 18px;
+            color: #838383;
+          }
+
+          &__title {
+            margin-top: 15px;
+            width: 400px;
+            font-weight: 400px;
+            font-size: 50px;
+            color: #292d32;
+          }
+
+          &__image {
+            position: absolute;
+            top: 74px;
+            left: 404px;
+            display: inline-block;
+            z-index: 2;
+          }
+        }
+
+        
+      }
+    }
+
+    &__right_side {
+      position: absolute;
+      height: 100%;
+      width: 509px;
+      right: 0;
+      background-color: #F9F9F9;
+      background-image: url(../imgs/main/Preview.svg);
+      background-repeat: no-repeat;
+
+      .article {
+        margin-top: 321px;
+        margin-left: 40px;
+        width: 181px;
+        color: #292D32;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 32.5px;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    width: 69px;
+    bottom: 185px;
+    left: 1302px;
+
+    &-bullet {
+      height: 5px;
+      width: 5px;
+      display: inline-block;
+      vertical-align: middle;
+
+      &-active {
+        background-color: #292d32;
+
+        height: 9px;
+        width: 9px;
+      }
+    }
+  }
+  .swiper-button-next {
+    position: absolute;
+    right:  364px;
+    top: 500px;
+    color: #292d32;
+    width: 105px;
+    height: 21px;
+    background-image: url(../imgs/main/Arrow.svg);
+    background-repeat: no-repeat;
+
+    &::after {
+       display: none;
+    }
+  }
+}
