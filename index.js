@@ -4,6 +4,14 @@ function triggerSubmitButtonClick() {
     .dispatchEvent(new Event("click"));
 }
 
+function personalMenuOpen() {
+  let menu = document.querySelector(".popup");
+  let actualMenuDisplay = getComputedStyle(menu).display;
+  actualMenuDisplay === "none"? menu.style.display = "block" : menu.style.display = "none" 
+
+  console.log(actualMenuDisplay);
+}
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
@@ -13,7 +21,7 @@ const swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    type: 'bullets',
+    type: "bullets",
   },
 
   // Navigation arrows

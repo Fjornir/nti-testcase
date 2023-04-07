@@ -1,7 +1,70 @@
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   height: 123px;
+
+  .popup {
+    display: none;
+    position: absolute;
+    top: 112px;
+    left: 936px;
+    z-index: 100;
+    transition: 2s;
+
+    &-menu {
+      position: relative;
+      margin-top: 11px;
+      width: 405px;
+      height: 389px;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -28px;
+        left: calc(50% - 19px);
+        background: white;
+        border: 7px solid transparent;
+        transform: rotate(45deg) translateX(15px) translateY(15px);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 30px;
+        background: #fff;
+        border-radius: 20px;
+
+        &__element {
+          color: #000000;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 70px;
+          height: 70px;
+          border-bottom: 1px solid #F2F2F2;
+
+          &:first-child {
+            height: 79px;
+            line-height: 49px;
+            background-image: url(../imgs/header/profile.svg);
+            background-repeat: no-repeat;
+            padding-left: 69px;
+          }
+
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 .navbar {
@@ -13,12 +76,12 @@
   font-size: 15px;
   line-height: 18px;
   line-height: 100%;
-  text-transform: uppercase;
 
   &-topics {
     display: flex;
     align-items: center;
     color: #292d32;
+    text-transform: uppercase;
 
     &__icon {
       width: 70px;
@@ -39,7 +102,7 @@
       &:last-child {
         margin-right: 0;
       }
-      &:nth-child(n+2):hover {
+      &:nth-child(n + 2):hover {
         opacity: 0.6;
         transition: 0.3s;
       }
@@ -49,21 +112,30 @@
   &-menu {
     display: flex;
     align-items: center;
+    text-transform: none;
 
     &__item {
       margin-right: 30px;
 
-      &:last-child{
+      &:first-child {
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+      }
+
+      &:last-child {
         margin-right: 0;
       }
 
-      &:hover{
+      &:hover {
         opacity: 0.6;
         transition: 0.3s;
       }
     }
 
-    &__counter{
+    &__counter {
       position: relative;
       top: -5px;
       right: 16px;
