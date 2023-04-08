@@ -50,6 +50,27 @@
   font-size: 50px;
   color: #292d32;
 }
+.main-wrapper__left_side .swiper-slide-detail {
+  display: flex;
+  margin-top: 46px;
+  align-items: center;
+}
+.main-wrapper__left_side .swiper-slide-detail__button {
+  height: 55px;
+  width: 55px;
+  background-color: #33a9ff;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.main-wrapper__left_side .swiper-slide-detail__pointer {
+  margin-top: 4px;
+}
+.main-wrapper__left_side .swiper-slide-detail__link {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #292d32;
+}
 .main-wrapper__left_side .swiper-slide__image {
   position: absolute;
   top: 0px;
@@ -62,7 +83,7 @@
   height: 100%;
   width: 509px;
   right: 0;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   background-image: url(../imgs/main/Preview.svg);
   background-repeat: no-repeat;
 }
@@ -70,7 +91,7 @@
   margin-top: 321px;
   margin-left: 40px;
   width: 181px;
-  color: #292D32;
+  color: #292d32;
   font-weight: 400;
   font-size: 25px;
   line-height: 32.5px;
@@ -104,6 +125,90 @@
 }
 .main .swiper-button-next::after {
   display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    height: 789px;
+    background-size: 293px 77px;
+    background-position: 32px 18px;
+  }
+  .main-wrapper {
+    flex-direction: column;
+  }
+  .main-wrapper__left_side {
+    width: 375px;
+  }
+  .main-wrapper__left_side .scroll {
+    display: none;
+  }
+  .main-wrapper__left_side .swiper {
+    margin: 0px;
+  }
+  .main-wrapper__left_side .swiper-slide {
+    height: 593px;
+  }
+  .main-wrapper__left_side .swiper-slide__article {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20.05px;
+    margin-top: 80px;
+    margin-left: 15px;
+  }
+  .main-wrapper__left_side .swiper-slide__title {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .main-wrapper__left_side .swiper-slide-detail {
+    margin-top: 28px;
+    margin-left: 15px;
+  }
+  .main-wrapper__left_side .swiper-slide-detail__button {
+    width: 45px;
+    height: 45px;
+  }
+  .main-wrapper__left_side .swiper-slide__image {
+    width: 327px;
+    height: 325px;
+    top: 258px;
+    left: 23px;
+  }
+  .main-wrapper__right_side {
+    height: 196px;
+    max-width: 375px;
+    background-size: 252px 168px;
+    background-image: url(../imgs/main/PreviewAdaptive.png);
+    background-position: 118px 15px;
+  }
+  .main-wrapper__right_side .article {
+    width: 136px;
+    margin-top: 59px;
+    margin-left: 15px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .main .swiper-pagination {
+    top: 563px;
+    left: 200px;
+    width: 57px;
+  }
+  .main .swiper-pagination-bullet {
+    width: 3px;
+    height: 3px;
+  }
+  .main .swiper-pagination-bullet-active {
+    width: 5px;
+    height: 5px;
+  }
+  .main .swiper-button-next {
+    top: 588px;
+    right: 30px;
+    width: 64px;
+    height: 14px;
+    background-size: 64px 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
