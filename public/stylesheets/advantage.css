@@ -5,12 +5,6 @@
   height: 975px;
   font-family: Roboto;
 }
-.advantage__img {
-  position: absolute;
-  top: 2084px;
-  left: 10px;
-  z-index: 1;
-}
 .advantage-wrapper {
   display: grid;
   grid-template-rows: 579px 290px;
@@ -101,7 +95,7 @@
   width: 70px;
   height: 70px;
   padding: 17px;
-  background-color: #343A41;
+  background-color: #343a41;
   border-radius: 10px;
 }
 .advantage .pros-card__title {
@@ -110,11 +104,110 @@
   font-weight: 700;
   font-size: 22px;
 }
+.advantage .pros-card__title_adaptive {
+  display: none;
+}
 .advantage .pros-card__text {
   margin-top: 13px;
   color: #b7b7b7;
   font-weight: 300;
   font-size: 16px;
+}
+.advantage .pros-card__text_adaptive {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .advantage {
+    margin-top: 100px;
+    height: 1546px;
+    padding: 15px;
+  }
+  .advantage-wrapper {
+    display: block;
+  }
+  .advantage-info {
+    margin-top: 85px;
+    margin-bottom: 179px;
+  }
+  .advantage-info__title {
+    max-width: 296px;
+    font-size: 30px;
+  }
+  .advantage-info__text {
+    max-width: 336px;
+    font-size: 15px;
+  }
+  .advantage-info-detail {
+    margin-top: 30px;
+  }
+  .advantage-info-detail__button {
+    width: 45px;
+    height: 45px;
+  }
+  .advantage-info-detail__link {
+    font-size: 15px;
+  }
+  .advantage-info::before {
+    width: 335px;
+    height: 121px;
+    top: 373px;
+    left: 14px;
+    background-size: 335px 121px;
+  }
+  .advantage-info::after {
+    width: 345px;
+    height: 194px;
+    top: 283px;
+    left: 76px;
+    background-size: 345px 194px;
+    background-repeat: no-repeat;
+  }
+  .advantage .pros-card {
+    padding: 15px;
+    width: 345px;
+    height: 211px;
+    margin-bottom: 20px;
+    background-size: 121px 64px;
+    background-position: 106% 0;
+    border-radius: 18px;
+  }
+  .advantage .pros-card:last-child {
+    margin-bottom: 0;
+  }
+  .advantage .pros-card-logo {
+    width: 50px;
+    height: 50px;
+    padding: 9px;
+  }
+  .advantage .pros-card-logo img {
+    width: 31px;
+    height: 31px;
+  }
+  .advantage .pros-card__title {
+    display: none;
+  }
+  .advantage .pros-card__title_adaptive {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 22.82px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+  .advantage .pros-card__text {
+    display: none;
+  }
+  .advantage .pros-card__text_adaptive {
+    text-align: start;
+    height: 60px;
+    display: block;
+    margin-top: 10px;
+    color: #b7b7b7;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20.29px;
+  }
 }
 
 /*# sourceMappingURL=advantage.css.map */

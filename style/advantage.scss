@@ -1,18 +1,10 @@
 .advantage {
-  
   position: relative;
   background-color: #f2f2f2;
   margin-top: 140px;
   height: 975px;
 
   font-family: Roboto;
-
-  &__img {
-    position: absolute;
-    top: 2084px;
-    left: 10px;
-    z-index: 1;
-  }
 
   &-wrapper {
     display: grid;
@@ -71,19 +63,19 @@
       }
     }
 
-    &::before{
+    &::before {
       content: "";
       display: block;
       position: absolute;
       width: 897px;
       height: 346px;
-      background-image: url(../imgs/advantage/best\ quality.svg) ;
+      background-image: url(../imgs/advantage/best\ quality.svg);
       background-repeat: no-repeat;
       top: 152px;
       left: 5px;
     }
 
-    &::after{
+    &::after {
       content: "";
       display: block;
       position: absolute;
@@ -117,10 +109,9 @@
         width: 70px;
         height: 70px;
         padding: 17px;
-        background-color: #343A41;
+        background-color: #343a41;
         border-radius: 10px;
       }
-
 
       &__title {
         margin-top: 25px;
@@ -129,11 +120,131 @@
         font-size: 22px;
       }
 
+      &__title_adaptive {
+        display: none;
+      }
+
       &__text {
         margin-top: 13px;
         color: #b7b7b7;
         font-weight: 300;
         font-size: 16px;
+      }
+
+      &__text_adaptive {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .advantage {
+    margin-top: 100px;
+    height: 1546px;
+    padding: 15px;
+
+    &-wrapper {
+      display: block;
+    }
+
+    &-info {
+      margin-top: 85px;
+      margin-bottom: 179px;
+
+      &__title {
+        max-width: 296px;
+        font-size: 30px;
+      }
+
+      &__text {
+        max-width: 336px;
+        font-size: 15px;
+      }
+
+      &-detail {
+        margin-top: 30px;
+
+        &__button {
+          width: 45px;
+          height: 45px;
+        }
+
+        &__link {
+          font-size: 15px;
+        }
+      }
+
+      &::before {
+        width: 335px;
+        height: 121px;
+        top: 373px;
+        left: 14px;
+        background-size: 335px 121px;
+      }
+
+      &::after {
+        width: 345px;
+        height: 194px;
+        top: 283px;
+        left: 76px;
+        background-size: 345px 194px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .pros {
+      &-card {
+        padding: 15px;
+        width: 345px;
+        height: 211px;
+        margin-bottom: 20px;
+        background-size: 121px 64px;
+        background-position: 106% 0;
+        border-radius: 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &-logo {
+          width: 50px;
+          height: 50px;
+          padding: 9px;
+
+          img {
+            width: 31px;
+            height: 31px;
+          }
+        }
+
+        &__title {
+          display: none;
+        }
+
+        &__title_adaptive {
+          display: block;
+          margin-top: 15px;
+          font-size: 18px;
+          line-height: 22.82px;
+          color: #ffffff;
+          font-weight: 700;
+        }
+
+        &__text {
+          display: none;
+        }
+  
+        &__text_adaptive {
+          text-align: start;
+          height: 60px;
+          display: block;
+          margin-top: 10px;
+          color: #b7b7b7;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20.29px;
+        }
       }
     }
   }
