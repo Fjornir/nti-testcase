@@ -104,10 +104,10 @@
         top: 3px;
         left: 51px;
       }
-      .catalogue-item__amount{
+      .catalogue-item__amount {
         top: 49px;
       }
-      .catalogue-item__title{
+      .catalogue-item__title {
         top: 54px;
       }
     }
@@ -117,10 +117,10 @@
         bottom: 15px;
         left: 75px;
       }
-      .catalogue-item__amount{
+      .catalogue-item__amount {
         top: 27px;
       }
-      .catalogue-item__title{
+      .catalogue-item__title {
         top: 32px;
       }
     }
@@ -130,11 +130,133 @@
         bottom: 26px;
         left: 87px;
       }
-      .catalogue-item__amount{
+      .catalogue-item__amount {
         bottom: 27px;
       }
-      .catalogue-item__title{
+      .catalogue-item__title {
         bottom: 22px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .catalogue {
+    width: 100%;
+    margin-top: 120px;
+    padding: 0 15px;
+
+    &-info {
+      margin-bottom: 40px;
+      &__title {
+        font-size: 30px;
+        line-height: 35.16px;
+        width: 249px;
+      }
+
+      &__text {
+        font-size: 15px;
+        line-height: 22.5px;
+        width: 335px;
+      }
+
+      &-detail {
+        margin-top: 30px;
+
+        &__button {
+          width: 45px;
+          height: 45px;
+        }
+
+        &__link {
+          font-size: 15px;
+        }
+      }
+    }
+
+    &-item {
+      height: 290px;
+      margin: 0 0 20px 0;
+      border-radius: 10px;
+
+      &__number {
+        font-size: 20px;
+        margin: 20px 0 0 20px;
+      }
+
+      &__amount {
+        left: 20px;
+        bottom: 25px;
+        font-size: 15px;
+      }
+
+      &__title {
+        font-size: 20px;
+        left: 20px;
+        bottom: 20px;
+      }
+
+      &:nth-of-type(1) {
+        height: 275px;
+
+        .catalogue-item__img {
+          width: 302px;
+          height: 178px;
+          left: 21px;
+          bottom: 30px;
+        }
+      }
+      &:nth-of-type(2) img {
+        width: 210px;
+        height: 193px;
+        left: 99px;
+        bottom: 32px;
+      }
+      &:nth-of-type(3) {
+        .catalogue-item__img {
+          width: 264px;
+          height: 107px;
+          left: 40px;
+          top: 36px;
+        }
+        .catalogue-item__amount {
+          left: 20px;
+          top: 65px;
+        }
+        .catalogue-item__title {
+          left: 20px;
+          top: 69px;
+        }
+      }
+
+      &:nth-of-type(4) {
+        .catalogue-item__img {
+          width: 226px;
+          height: 124px;
+          bottom: 0;
+          left: 58px;
+        }
+        .catalogue-item__amount {
+          top: 47px;
+        }
+        .catalogue-item__title {
+          top: 51px;
+        }
+      }
+
+      &:nth-of-type(5) {
+        .catalogue-item__img {
+          width: 253px;
+          height: 167px;
+          bottom: 14px;
+          left: 68px;
+        }
+        .catalogue-item__amount {
+          bottom: -4px;
+        }
+        .catalogue-item__title {
+          bottom: -4px;
+        }
       }
     }
   }

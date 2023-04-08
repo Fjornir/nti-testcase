@@ -116,4 +116,107 @@
   bottom: 22px;
 }
 
+@media screen and (max-width: 375px) {
+  .catalogue {
+    width: 100%;
+    margin-top: 120px;
+    padding: 0 15px;
+  }
+  .catalogue-info {
+    margin-bottom: 40px;
+  }
+  .catalogue-info__title {
+    font-size: 30px;
+    line-height: 35.16px;
+    width: 249px;
+  }
+  .catalogue-info__text {
+    font-size: 15px;
+    line-height: 22.5px;
+    width: 335px;
+  }
+  .catalogue-info-detail {
+    margin-top: 30px;
+  }
+  .catalogue-info-detail__button {
+    width: 45px;
+    height: 45px;
+  }
+  .catalogue-info-detail__link {
+    font-size: 15px;
+  }
+  .catalogue-item {
+    height: 290px;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+  }
+  .catalogue-item__number {
+    font-size: 20px;
+    margin: 20px 0 0 20px;
+  }
+  .catalogue-item__amount {
+    left: 20px;
+    bottom: 25px;
+    font-size: 15px;
+  }
+  .catalogue-item__title {
+    font-size: 20px;
+    left: 20px;
+    bottom: 20px;
+  }
+  .catalogue-item:nth-of-type(1) {
+    height: 275px;
+  }
+  .catalogue-item:nth-of-type(1) .catalogue-item__img {
+    width: 302px;
+    height: 178px;
+    left: 21px;
+    bottom: 30px;
+  }
+  .catalogue-item:nth-of-type(2) img {
+    width: 210px;
+    height: 193px;
+    left: 99px;
+    bottom: 32px;
+  }
+  .catalogue-item:nth-of-type(3) .catalogue-item__img {
+    width: 264px;
+    height: 107px;
+    left: 40px;
+    top: 36px;
+  }
+  .catalogue-item:nth-of-type(3) .catalogue-item__amount {
+    left: 20px;
+    top: 65px;
+  }
+  .catalogue-item:nth-of-type(3) .catalogue-item__title {
+    left: 20px;
+    top: 69px;
+  }
+  .catalogue-item:nth-of-type(4) .catalogue-item__img {
+    width: 226px;
+    height: 124px;
+    bottom: 0;
+    left: 58px;
+  }
+  .catalogue-item:nth-of-type(4) .catalogue-item__amount {
+    top: 47px;
+  }
+  .catalogue-item:nth-of-type(4) .catalogue-item__title {
+    top: 51px;
+  }
+  .catalogue-item:nth-of-type(5) .catalogue-item__img {
+    width: 253px;
+    height: 167px;
+    bottom: 14px;
+    left: 68px;
+  }
+  .catalogue-item:nth-of-type(5) .catalogue-item__amount {
+    bottom: -4px;
+  }
+  .catalogue-item:nth-of-type(5) .catalogue-item__title {
+    bottom: -4px;
+  }
+}
+
 /*# sourceMappingURL=catalogue.css.map */

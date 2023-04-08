@@ -94,6 +94,7 @@
       height: 100%;
       width: 509px;
       right: 0;
+      top: 0;
       background-color: #f9f9f9;
       background-image: url(../imgs/main/Preview.svg);
       background-repeat: no-repeat;
@@ -202,6 +203,7 @@
       }
 
       &__right_side {
+        top: 593px;
         height: 196px;
         max-width: 375px;
         background-size: 252px 168px;

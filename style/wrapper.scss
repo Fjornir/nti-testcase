@@ -7,3 +7,9 @@
   justify-content: center;
   font-family: Roboto;
 }
+
+@media screen and (max-width: 375px) {
+  .page {
+    width: 100%;
+  }
+}
