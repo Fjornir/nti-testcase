@@ -1180,6 +1180,9 @@ legend {
   width: 295px;
   height: 591px;
 }
+.feedback__img_adaptive {
+  display: none;
+}
 .feedback .form {
   width: 700px;
   padding: 100px 129px;
@@ -1254,8 +1257,8 @@ legend {
 .feedback .form-detail__link {
   line-height: 30px;
   font-size: 16px;
-  font-weight: 400px;
-  color: #FFFFFF;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 .our_contacts {
@@ -1270,6 +1273,99 @@ legend {
 }
 
 @media screen and (max-width: 375px) {
+  .feedback {
+    width: 100%;
+    height: 1181px;
+    flex-direction: column;
+  }
+  .feedback .contacts {
+    width: 100%;
+    padding: 0;
+    padding: 100px 0 60px 30px;
+  }
+  .feedback .contacts__title {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .feedback .contacts__about {
+    font-size: 15px;
+    width: 222px;
+    line-height: 22.5px;
+  }
+  .feedback .contacts-info {
+    margin-top: 40px;
+  }
+  .feedback .contacts-info__icon {
+    width: 17px;
+    height: 17px;
+  }
+  .feedback .contacts-info__title {
+    font-size: 15px;
+    line-height: 20.05px;
+    margin: 0;
+  }
+  .feedback .contacts-info__address {
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .feedback .contacts__icon {
+    width: 26px;
+    height: 26px;
+    margin-top: 30px;
+  }
+  .feedback .contacts__icon:nth-of-type(1) {
+    margin-right: 12px;
+  }
+  .feedback__img {
+    display: none;
+  }
+  .feedback__img_adaptive {
+    display: block;
+    position: absolute;
+    top: 411px;
+    left: 174px;
+  }
+  .feedback .form {
+    width: 100%;
+    padding: 60px 26px 60px 30px;
+  }
+  .feedback .form__title {
+    font-size: 30px;
+    line-height: 35.16px;
+  }
+  .feedback .form__about {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+  .feedback .form-group {
+    border-radius: 10px;
+  }
+  .feedback .form-group__label {
+    top: -11px;
+    font-size: 15px;
+    line-height: 20.05px;
+  }
+  .feedback .form-group:nth-of-type(1) {
+    height: 40px;
+  }
+  .feedback .form-group:nth-of-type(2) {
+    height: 40px;
+  }
+  .feedback .form-group:nth-of-type(3) {
+    height: 80px;
+  }
+  .feedback .form-group:nth-of-type(3) .form-group__control {
+    height: 4em;
+    width: 19em;
+  }
+  .feedback .form-detail__button {
+    width: 45px;
+    height: 45px;
+  }
+  .feedback .form-detail__link {
+    font-size: 15px;
+  }
   .our_contacts {
     display: none;
   }
