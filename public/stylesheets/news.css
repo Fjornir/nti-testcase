@@ -139,4 +139,90 @@
   background-image: url(../imgs/news/Six.png);
 }
 
+@media screen and (max-width: 375px) {
+  .news {
+    width: 100%;
+    margin: 120px auto 120px auto;
+    padding: 0 15px;
+  }
+  .news-header {
+    flex-direction: column;
+  }
+  .news-header__title {
+    font-size: 30px;
+  }
+  .news-header-detail__link {
+    font-size: 15px;
+    order: 2;
+  }
+  .news-header-detail__button {
+    width: 45px;
+    height: 45px;
+    order: 1;
+  }
+  .news__text {
+    font-size: 15px;
+    max-width: 344px;
+  }
+  .news .feed {
+    display: block;
+  }
+  .news .feed-item {
+    width: 324px;
+    height: 293px;
+    background-size: 324px 235px;
+    margin-bottom: 20px;
+  }
+  .news .feed-item-date {
+    width: 39.2px;
+    height: 76.06px;
+    left: 305px;
+  }
+  .news .feed-item-date__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 17.92px;
+  }
+  .news .feed-item-date__text {
+    width: 30px;
+    font-size: 15px;
+    margin-left: 5px;
+    line-height: 10.75px;
+    font-weight: 300;
+    overflow: hidden;
+  }
+  .news .feed-item-footer {
+    width: 324px;
+    height: 143px;
+    background-size: 324px 143px;
+  }
+  .news .feed-item-footer-button_wrapper {
+    width: 56px;
+    height: 56px;
+    left: 251px;
+    top: 27px;
+  }
+  .news .feed-item-footer-button_wrapper__button_item {
+    width: 32px;
+    height: 32px;
+  }
+  .news .feed-item-footer__title {
+    margin: 21px 0 0 20px;
+    line-height: 25px;
+  }
+  .news .feed-item-footer__text {
+    margin: 10px 0 0 20px;
+    line-height: 21px;
+  }
+  .news .feed-item:nth-child(2) {
+    display: none;
+  }
+  .news .feed-item:nth-child(3) {
+    display: none;
+  }
+  .news .feed-item:nth-child(6) {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=news.css.map */

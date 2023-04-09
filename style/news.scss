@@ -87,7 +87,7 @@
         &__text {
           font-weight: 300;
           font-size: 11px;
-          line-height: 29.3px
+          line-height: 29.3px;
         }
       }
 
@@ -154,6 +154,112 @@
       }
       &:nth-child(6) {
         background-image: url(../imgs/news/Six.png);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .news {
+    width: 100%;
+    margin: 120px auto 120px auto;
+    padding: 0 15px;
+
+    &-header {
+      flex-direction: column;
+      &__title {
+        font-size: 30px;
+      }
+
+      &-detail {
+        &__link {
+          font-size: 15px;
+          order: 2;
+        }
+        &__button {
+          width: 45px;
+          height: 45px;
+          order: 1;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 15px;
+      max-width: 344px;
+    }
+
+    .feed {
+      display: block;
+
+      &-item {
+        width: 324px;
+        height: 293px;
+        background-size: 324px 235px;
+        margin-bottom: 20px;
+
+        &-date {
+          width: 39.2px;
+          height: 76.06px;
+          left: 305px;
+
+          &__title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 17.92px;
+          }
+
+          &__text {
+            width: 30px;
+            font-size: 15px;
+            margin-left: 5px;
+            line-height: 10.75px;
+            font-weight: 300;
+            overflow: hidden;
+          }
+        }
+
+        &-footer {
+          width: 324px;
+          height: 143px;
+          background-size: 324px 143px;
+
+          
+
+          &-button_wrapper {
+            width: 56px;
+            height: 56px;
+            left: 251px;
+            top: 27px;
+
+            &__button_item {
+              width: 32px;
+              height: 32px;
+            }
+          }
+          &__title {
+            margin: 21px 0 0 20px;
+            line-height: 25px;
+          }
+
+          &__text {
+            margin: 10px 0 0 20px;
+            line-height: 21px;
+            
+          }
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          display: none;
+        }
+
+        &:nth-child(6) {
+          display: none;
+        }
       }
     }
   }

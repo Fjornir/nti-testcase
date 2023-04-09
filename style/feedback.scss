@@ -164,3 +164,9 @@
   background-repeat: no-repeat;
   background-position-y: 184px;
 }
+
+@media screen and (max-width: 375px) {
+  .our_contacts{
+    display: none;
+  }
+}
