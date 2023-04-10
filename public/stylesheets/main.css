@@ -135,6 +135,7 @@
     background-position: 32px 18px;
   }
   .main-wrapper {
+    width: 100%;
     flex-direction: column;
   }
   .main-wrapper__left_side {
@@ -157,6 +158,7 @@
     margin-left: 15px;
   }
   .main-wrapper__left_side .swiper-slide__title {
+    width: 300px;
     margin-top: 5px;
     margin-left: 15px;
     font-weight: 400;

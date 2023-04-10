@@ -154,6 +154,7 @@
     background-position: 32px 18px;
 
     &-wrapper {
+      width: 100%;
       flex-direction: column;
 
       &__left_side {
@@ -177,6 +178,7 @@
               margin-left: 15px;
             }
             &__title {
+              width: 300px;
               margin-top: 5px;
               margin-left: 15px;
               font-weight: 400;
