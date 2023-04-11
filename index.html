@@ -54,6 +54,10 @@
                 class="navbar-menu__counter"
                 src="./public/imgs/header/counter.svg"
             /></a>
+
+            <a class="navbar-menu__item" onclick="adaptiveMenuOpen()"
+              ><img id="adaptive_menu_image" src="./public/imgs/header/MenuOpen.png"
+            /></a>
           </div>
         </nav>
         <div class="popup">
@@ -67,8 +71,17 @@
             </div>
           </div>
         </div>
+
+        <div class="popup_adaptive">
+          <a href="#" class="popup_adaptive__item">Главная</a>
+          <a href="#" class="popup_adaptive__item">Каталог</a>
+          <a href="#" class="popup_adaptive__item">Новости</a>
+          <a href="#" class="popup_adaptive__item">Наш Асц</a>
+          <a href="#" class="popup_adaptive__item">Контакты</a>
+        </div>
       </header>
     </div>
+    <div class="blur"></div>
     <main class="main">
       <div class="main-wrapper">
         <div class="main-wrapper__left_side">
@@ -78,9 +91,7 @@
           </div>
 
           <div class="swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide">
                 <div class="swiper-slide__article">Новое поступление</div>
                 <div class="swiper-slide__title">
@@ -291,8 +302,8 @@
             и низкие цены
           </article>
           <p class="pros-card__text_adaptive">
-            В наличии широкий ассортимент, а также доступные цены<br /> на ноутбуки
-            Dell
+            В наличии широкий ассортимент, а также доступные цены<br />
+            на ноутбуки Dell
           </p>
           <p class="pros-card__text">
             В наличии широкий ассортимент, а также доступные цены на ноутбуки
@@ -364,8 +375,8 @@
             партнером DELL
           </article>
           <p class="pros-card__text_adaptive">
-            Мы лучший официальный поставщик продукции DELL в России <br /> и
-            странах СНГ
+            Мы лучший официальный поставщик продукции DELL в России <br />
+            и странах СНГ
           </p>
           <p class="pros-card__text">
             Официальный поставщик продукции DELL в России и странах СНГ
@@ -548,7 +559,10 @@
         <img class="contacts__icon" src="./public/imgs/feedback/whatsup.svg" />
       </div>
       <img class="feedback__img" src="./public/imgs/feedback/iPhone.png" />
-      <img class="feedback__img_adaptive" src="./public/imgs/feedback/iPhoneAdaptive.png" />
+      <img
+        class="feedback__img_adaptive"
+        src="./public/imgs/feedback/iPhoneAdaptive.png"
+      />
       <form class="form">
         <article class="form__title">Оставьте заявку</article>
         <p class="form__about">Оставьте свой номер, и мы перезвоним Вам.</p>
@@ -565,7 +579,7 @@
           <textarea
             class="form-group__control"
             rows="5"
-            cols="45"
+            cols="32"
             name="text"
             required
           ></textarea>

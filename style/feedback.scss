@@ -112,8 +112,10 @@
       }
       &__control {
         line-height: 24.06px;
+        resize: none;
         border: none;
         color: #ffffff;
+        font-size: 22px;
       }
 
       &:nth-of-type(1) {
@@ -257,6 +259,10 @@
           line-height: 20.05px;
         }
 
+        &__control {
+          font-size: 15px;
+        }
+
         &:nth-of-type(1) {
           height: 40px;
         }
@@ -270,7 +276,7 @@
           .form-group__control {
             
             height: 4em;
-            width: 19em;
+            width: 20em;
           }
         }
       }
